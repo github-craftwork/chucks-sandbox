@@ -5,7 +5,6 @@ jobs:
     name: Hello world action
     runs-on: ubuntu-latest # useful environment to we can run a simple bash    
     steps:
-    run: |
-        echo "hello $NAME"
-      env:
-        NAME: Mary
+ - name: hello-world
+      run: |
+        echo "hello $GITHUB_ACTOR"
